@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "konpig hugo blog"
 theme = "m10c"
 
 [params]
@@ -8,4 +8,5 @@ theme = "m10c"
  
  [[params.social]]
  name = "github"
+ description = "Welcome to my blog"
  url = "https://github.com/kimkonpig"
