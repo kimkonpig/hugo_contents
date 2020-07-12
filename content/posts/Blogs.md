@@ -1,7 +1,6 @@
 ---
 title: "Blogs"
 date: 2020-07-12T22:50:06+09:00
-draft: true
 ---
 
 ### This is a new blog page
