@@ -1,11 +1,11 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "konpig"
+title = "KONPIG BLOG"
 theme = "m10c"
 
 [params]
  author = "Kim Youlim"
- description = "Welcome to my blog"
+ description = "Welcome"
  
  [[params.social]]
   name = "github"
