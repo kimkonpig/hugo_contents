@@ -8,5 +8,8 @@ theme = "m10c"
  description = "Welcome to my blog"
  
  [[params.social]]
- name = "github"
- url = "https://github.com/kimkonpig"
+  name = "github"
+  url = "https://github.com/kimkonpig"
+ [[param.social]]
+  name = "naver"
+  url = "https://blog.naver.com/kon_pig"

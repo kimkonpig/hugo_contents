@@ -1,9 +1,10 @@
 ---
 title: "Creating a New Hugo Blog"
 date: 2020-07-13T20:50:39+09:00
+tags: ["hugo", "themes", "git", "blog"]
 ---
 
-# Creating A New Hugo Blog
+# <!--Creating A New Hugo Blog-->
 
 MacOS에 hugo를 설치해 git 연동 블로그를 만들었다.
 
