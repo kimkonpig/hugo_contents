@@ -9,7 +9,7 @@ Mac OS에 hugo를 설치해 git 연동 블로그를 만들었다. 여러가지 �
 
 
 
-### 1. Installation
+## 1. Installation
 
 Homebrew를 사용하여 hugo를 설치한다.
 
@@ -37,7 +37,7 @@ hugo version
 
 
 
-### 2. Create New Site
+## 2. Create New Site
 
 hugo 블로그를 위한 New Site(새로운 폴더)를 만들어야 한다. 원하는 경로로 이동하여 hugo 명령어를 통해 new site를 만든다. (아래 스크립트 실행시 'hugo'라는 이름의 site가 생성된다. 원하는 이름으로 만들면 된다.)
 
@@ -47,11 +47,11 @@ hugo new site hugo
 
 
 
-### 3. Set theme
+## 3. Set theme
 
 hugo 에서 제공하는 여러가지 테마 중에 원하는 테마를 선택하여 내가 만들 블로그에 적용할 차례. [여기](https://themes.gohugo.io/)에서 다양한 테마를 확인할 수 있다. 내가 선택한 테마는 [m10c](https://themes.gohugo.io/hugo-theme-m10c/) 이다. 
 
-![20200713-01](/static/img/20200713-01.JPG)
+![20200713-01](/img/20200713-01.JPG)
 
 
 
@@ -81,7 +81,7 @@ vi config.toml
 
 
 
-### 4. Run Server
+## 4. Run Server
 
 지금까지 한 내용들이 어떻게 반영되었는지 한 번 확인해보고 싶다면 아래 스크립트를 실행하여 먼저 서버를 구동시킨다.
 
@@ -91,11 +91,11 @@ hugo server -D
 
 서버가 올라가면 localhost:1313 을 입력하여 내가 만든 블로그를 확인할 수 있다.
 
-![20200713-01](/static/img/20200713-02.JPG)
+![20200713-01](/img/20200713-02.JPG)
 
 
 
-### 5. Ready for Deploying
+## 5. Ready for Deploying
 
 로컬이 아닌 username.github.io로 호스팅하기 위해서 github에 두 개의 repository를 생성한다. 컨텐츠 저장소와 최종 빌드 배포용 저장소를 만든다. 최종 빌드 저장소를 만들 때 username.github.io 형식에 맞춰 생성한다. (gitpage에서 제공하는 url 형식이기 때문이다.)
 
@@ -106,7 +106,7 @@ hugo server -D
 
 github에 두 개의 repository를 만든 후 remote와 submodule을 설정한다.
 
-#####5-1. remote 설정
+####5-1. remote 설정
 
 ~~~ sh
 cd hugo # 초기에 생성한 new site 폴더로 이동
@@ -116,7 +116,7 @@ git remote add origin git@github.com:kimkonpig/hugo_contents
 
 
 
-##### 5-2. submodule 설정
+#### 5-2. submodule 설정
 
 ~~~sh
 git submodule add -b master git@github.com:kimkonpig/kimkonpig.github.io.git public
@@ -128,7 +128,7 @@ git submodule add -b master git@github.com:kimkonpig/kimkonpig.github.io.git pub
 
 
 
-### 6. Deploy
+## 6. Deploy
 
 초기에 생성한 new site 폴더(내 폴더 이름은 'hugo')에서 아래 스크립트를 실행한다.
 
@@ -150,6 +150,6 @@ git push origin master
 
 git push가 정상적으로 되었다면 username.github.io로 접속하여 최종 배포된 페이지를 확인할 수 있다.
 
-![20200713-01](/static/img/20200713-03.JPG)
+![20200713-01](/img/20200713-03.JPG)
 
 아직 아무것도 없다. 이 포스팅을 시작으로 하나하나 채워나가야겠다.
