@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "KONPIG BLOG"
 theme = "m10c"
+disqusShortname = "kimkonpig"
 
 [params]
  author = "Kim Youlim"
