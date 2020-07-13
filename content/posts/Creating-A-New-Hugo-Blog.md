@@ -137,7 +137,7 @@ github에 두 개의 repository를 만든 후 remote와 submodule을 설정한�
 #### 5-1. remote 설정
 
 ~~~sh
-cd hugo #초기에 생성한 new site 폴더로 이동
+cd hugo # 초기에 생성한 new site 폴더로 이동
 git init
 git remote add origin git@github.com:kimkonpig/hugo_contents
 ~~~
@@ -183,4 +183,19 @@ git push가 정상적으로 되었다면 username.github.io로 접속하여 최�
 
 아직 아무것도 없다. 이 포스팅을 시작으로 하나하나 채워나가야겠다.
 
-  
+
+
+## 7. Update
+
+파일 추가 및 수정 후 rebuild 할 때 hugo server -D 또는 hugo -D 가 실행이 잘 되지 않는다면 아래 명령어로 빌드한다.
+
+~~~sh
+# hugo server -D 대신
+hugo server -t m10c # 테마이름 입력
+
+# hugo -D 대신
+hugo -t m10c # 테마이름 입력
+~~~
+
+
+
