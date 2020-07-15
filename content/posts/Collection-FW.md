@@ -1,7 +1,6 @@
 ---
 title: "Java Collection Framework"
-date: 2020-07-15
-draft: true
+date: 2020-07-16T00:44:46+09:00
 ---
 
 
@@ -15,10 +14,10 @@ Java Collection은 데이터 집합의 저장 및 조작을 위한 구조를 제
 - Collection ? 오브젝트의 단일 유닛(=그룹)을 나타낸다.
 
 - Framework ? 이미 만들어진 구조를 제공한다. 클래스와 인터페이스의 set을 나타낸다.
-  
+
   - 인터페이스 : Set, List, Queue, Deque, Map
     - List와 Set은 Collection 인터페이스를 상속받지만, 구조상의 차이로 Map은 별도로 정의한다.
-  
+
   - 클래스 : ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet, HashTable, HashMap, SortedMap, TreeMap  
 
 ![Collection](/img/20200714-02.JPG)
