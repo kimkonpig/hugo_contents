@@ -8,7 +8,7 @@ draft: true
 
 # <!--Collection Framework-->
 
-Java Collection은 데이터 집합의 저장 및 조작을 위한 구조를 제공하는 프레임워크다.
+Java Collection은 데이터 집합의 저장 및 조작을 위한 구조를 제공하는 프레임워크다. 
 
 다시 쉽게 말해, **Java Collection Framework는 다양한 인터페이스와 클래스를 제공하는 FW**다. ([참고](https://www.javatpoint.com/collections-in-java))
 
