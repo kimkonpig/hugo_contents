@@ -1,7 +1,7 @@
 ---
 title: "Programmers 12899 | 124 나라의 숫자"
 date: 2020-07-22
-tags: ["programmers", "coding", "practice"]
+tags: ["programmers", "coding", "practice", "quiz"]
 ---
 
 # <!-- Programmers 12899 | 124 나라의 숫자 -->
@@ -10,7 +10,7 @@ tags: ["programmers", "coding", "practice"]
 
 124 나라가 있습니다. 124 나라에서는 10진법이 아닌 다음과 같은 자신들만의 규칙으로 수를 표현합니다.
 
-- 124 나라에는 자연수만 존재합니다.
+- 124 나라에는 자연수만 존재합니다. 
 
 - 124 나라에는 모든 수를 표현할 때 1, 2, 4만 사용합니다.
 
