@@ -90,38 +90,41 @@ tags: ["JPA", "INFLEARN", "JavaPersistence"]
 
   * JPA와 상속
     * 저장 시
-      개발자가 할일 : jpa.persist(album);
-      나머지는 JPA가 처리 : INSERT INTO ITEM ... / INSERT INTO ALBUM ...
+      개발자가 할일 : jpa.persist(album);  
+      나머지는 JPA가 처리 : INSERT INTO ITEM ... / INSERT INTO ALBUM ...  
+      
     * 조회 시
-      개발자가 할일 : Album album = jpa.find(Album.class, albumId);
+      개발자가 할일 : Album album = jpa.find(Album.class, albumId);  
       나머지는 JPA가 처리 : SELECT I.* , A.* FROM ITEM I JOIN ALBUM A ON I.ITEM_ID = A.ITEM_ID
+      
     
   * JPA와 연관관계, 객체 그래프 탐색 -> 신뢰할 수 있는 엔티티, 계층
-    * 연관관계 저장
-      member.setTeam(team);
-      jpa.persist(member);
-    * 객체 그래프 탐색
-      Member member = jpa.find(Member.class, memberId);
-      Team team = member.getTeam();
+    * 연관관계 저장  
+      member.setTeam(team);  
+      jpa.persist(member);  
+    * 객체 그래프 탐색  
+      Member member = jpa.find(Member.class, memberId);  
+      Team team = member.getTeam();  
+      
     
-  * JPA와 비교하기
-    * 동일한 트랜잭션에서 조회한 엔티티는 같음을 보장
-      String memberId = "100";
-      Member member1 = jpa.find(Member.class, memberId); //SQL
-      Member member2 = jpa.find(Member.class, memberId); //캐시(SQL 한번만 실행, 약간의 성능 향상)
-      member1 == member2; //true
+  * JPA와 비교하기  
+    * 동일한 트랜잭션에서 조회한 엔티티는 같음을 보장  
+      String memberId = "100";  
+      Member member1 = jpa.find(Member.class, memberId); //SQL  
+      Member member2 = jpa.find(Member.class, memberId); //캐시(SQL 한번만 실행, 약간의 성능 향상)  
+      member1 == member2; //true  
 
   
 
 * JPA의 성능 최적화 기능
 
-  * **1차 캐시와 동일성(identity) 보장 **  
-    * 같은 트랜잭션 안에서는 같은 엔티티를 반환(약간의 조회 성능 향상)
-    * DB Isolation Level이 Read Commit이어도 애플리케이션에서 Repeatable Read 보장
+  * **1차 캐시와 동일성(identity) 보장 **   
+    * 같은 트랜잭션 안에서는 같은 엔티티를 반환(약간의 조회 성능 향상)  
+    * DB Isolation Level이 Read Commit이어도 애플리케이션에서 Repeatable Read 보장  
       
 
-  * **트랜잭션을 지원하는 쓰기 지연**(transactional write-behind, 버퍼링 기능) - INSERT 예시
-    * 트랜잭션을 커밋할 때까지 INSERT SQL을 모음
+  * **트랜잭션을 지원하는 쓰기 지연**(transactional write-behind, 버퍼링 기능) - INSERT 예시  
+    * 트랜잭션을 커밋할 때까지 INSERT SQL을 모음  
 
     * JDBC BATCH SQL 기능을 사용해서 한번에 SQL 전송  
       transaction.begin(); //트랜잭션 시작  
@@ -133,9 +136,9 @@ tags: ["JPA", "INFLEARN", "JavaPersistence"]
     transaction.commit; //트랜잭션 커밋
       
 
-  * **지연 로딩(Lazy Loading)**, 즉시 로딩 (옵션 하나로 선택 가능)
-    * 지연 로딩 : 객체가 실제 사용될 때 로딩
-    * 즉시 로딩 : JOIN SQL로 한번에 연관된 객체까지 미리 조회
+  * **지연 로딩(Lazy Loading)**, 즉시 로딩 (옵션 하나로 선택 가능)  
+    * 지연 로딩 : 객체가 실제 사용될 때 로딩  
+    * 즉시 로딩 : JOIN SQL로 한번에 연관된 객체까지 미리 조회  
 
 ![JPA로딩](/img/image-20201105142854410.png)
 
